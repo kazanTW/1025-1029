@@ -17,6 +17,6 @@ int recursive(int n) {
         return 2;
     }
     else if (n != 1) {
-        return recursive(n - 1) + recursive((int)floor((double)n / 2));
+        return recursive(n - 1) + recursive(n / 2);
     }
 }
